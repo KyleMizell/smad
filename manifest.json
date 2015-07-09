@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png"
+   },
+   "chrome_url_overrides": {
+      "newtab": "dashboard.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "A Chrome extension to replace iGoogle.",
+   "icons": {
+      "256": "icon.png"
+   },
+   "manifest_version": 2,
+   "name": "Super-Mega-Awesome Dashboard",
+   "short_name": "SMAD",
+   "description": "A solid replacement for iGoogle",
+   "permissions": [ "tabs", "http://*.google.com/", "https://*.google.com/", "http://*.gstatic.com/", "http://*.googleusercontent.com/", "http://*.engadget.com/", "http://*.espn.go.com/", "http://*.seattletimes.com/", "http://*.craigslist.org/", "http://*.amazon.com/", "http://*.ebay.com/" ],
+   "version": "1.0.4"
+}

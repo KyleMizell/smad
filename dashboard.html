@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Kyle's Dashboard</title>
+    <style>
+        body {
+            font-family: "Calibri";
+            font-size: 13px;
+        }
+
+        a {
+            color: #15c;
+        }
+
+        a:visited {
+            color: #61c;
+        }
+
+        .header {
+            font-size: 32px;
+            color: #222;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #dcdcdc;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #main-container {
+            width: 100%;
+            border: 0;
+            padding: 0;
+            margin: auto;
+        }
+
+        .column-main {
+            width: 70%;
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        .column-right {
+            width: 30%;
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        .modules {
+            vertical-align: top;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .grid {
+            border: 1px solid #dcdcdc;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .heading {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #dcdcdc;
+            font-size: 15px;
+            font-weight: bold;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+            padding: 0;
+            white-space: nowrap;
+            padding-left: 7px;
+            padding-right: 60px !important;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            text-decoration: none;
+            color: #111;
+            position: relative;
+        }
+
+        .details {
+            margin: 5px;
+            font-size: 13px;
+            padding-left: 7px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .temp {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+</head>
+<body>
+<div class="header">Super-Mega-Awesome Dashboard</div>
+<table id="main-container">
+    <tr>
+        <td class="column-main modules">
+            <div id="engadget" class="grid">
+                <div class="heading">Engadget</div>
+                <div id="engadget-container" class="details"></div>
+            </div>
+            <div id="espn" class="grid">
+                <div class="heading">ESPN NFL</div>
+                <div id="espn-container" class="details"></div>
+            </div>
+            <div id="psearch" class="grid">
+                <div class="heading">Product Search</div>
+                <div id="psearch-container" class="details"></div>
+            </div>
+        </td>
+        <td class="column-right modules">
+            <div id="google-finance" class="grid">
+                <div class="heading">Google Finance</div>
+                <div id="google-finance-container" class="details"></div>
+            </div>
+            <div id="seahawks" class="grid">
+                <div class="heading">Seattle Times: Seahawks</div>
+                <div id="seahawks-container" class="details"></div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div id="tempAmazon" class="temp"></div>
+<div id="tempEbay" class="temp"></div>
+<div id="tempGoogle" class="temp"></div>
+</body>
+</html>
